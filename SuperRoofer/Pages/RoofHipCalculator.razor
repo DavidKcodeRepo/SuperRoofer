@@ -1,0 +1,40 @@
+﻿@page "/RoofHipCalculator"
+@using static SuperRoofer.Pages.RoofHipCalculator;
+
+<h2 class="text-primary">Roof Hip Calculator</h2>
+<p>Type in your roof geometry using the input fields below! <br />
+	The resulting roof geometries will automatically be reported back to you in the bottom panel!</p>
+
+<div class="border p-2 mt-2" style="background-color:azure">
+	<div class="row">
+		<div class="bg-light border m-1 col-5">
+			<div style="text-align: right;">
+				<div style="text-align: right;">Length: <input type="number" @bind-value="@_RoofGeometry.Length"></div> <br />
+				<div>Width: <input type="number" @bind-value="@_RoofGeometry.Width" /></div> <br />
+				<div>SlopeAngle: <input type="number" @bind-value="@_RoofGeometry.SlopeAngle" /></div> <br />
+				<div>EndSlopeAngle: <input type="number" @bind-value="@_RoofGeometry.EndSlopeAngle" /></div><br />
+				<button class= "btn btn-success"@onclick="CalculateGeometry">Calculate</button> <br />
+			</div>
+			<br />
+		</div>
+		<div class="bg-light border m-1 col-5">
+			<div class="text-center">
+				<img src="/images/RoofPlan.png" width=500></div>
+			<br />
+		</div>
+	</div>
+</div>
+
+<div class="col-12 border p-3">
+
+	<h3 class="text-primary">Roof Geometry</h3> <hr />
+
+	The hieght of this roof is : @_RoofGeometry.Hieght.ToString("F2") m<br />
+	The ridge line length of this roof is : @_RoofGeometry.RidgeLength.ToString("F2") m<br />
+	The hip-length of the this roof is : @_RoofGeometry.HipLength.ToString("F2") m<br />
+
+</div>
+
+
+
+

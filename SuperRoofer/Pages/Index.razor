@@ -1,0 +1,61 @@
+﻿@page "/"
+
+<PageTitle>Super Roofer</PageTitle>
+
+<h2>Super Roofer</h2>
+
+<h4>Planning and Meta.</h4>
+
+This code is provided for demonstration of competence inside blazor and my ability to learn new things. <br/>
+I have opted for preference to shorthand implementation in this task, considering the minimal complexity of the task.
+<br />
+ - For example, I considered putting the code behind in a separate class library; but I haven't for sake of brevity.
+<br />
+
+I have avoided feature creep and focused back to the requirements. At one point I was solving a 7 way calc path <br />
+for the roof considering any of the 7 defining variables missing,
+<br />
+I have respected the low front end requirements and have used basic bootstrap css and in-code libraries only.
+<br />
+  In particular, I would have found a way to bring in sliders; such as from an external js package
+<br />
+<br />
+
+<h4>Today I learned:</h4>
+<br />
+Not all class library functions can be used in Blazor componenets, e.g. extension methods.
+Struggled with triggering the entry point for the calculate function. I had it in the onParameterSet, which wouldn't rerender.
+<br />
+
+<br />
+
+<h4> Iinitial planning worklist</h4>
+<br />
+
+TODO:<br />
+<br />
+App Layout -<br />
+______<br />
+Title<br />
+Landing<br />
+_______<br />
+|Sliders|Picture|<br />
+_______<br />
+Calc output<br />
+_______<br />
+<br />
+<br />
+<ul>
+	<li>Create business logic </li>
+	<li>- Edge cases? What if W>L? What if angles = 0? </li>
+	<li>Create html layout (as above) </li>
+	<li>Create form </li>
+	<li>Wire up form to business logic </li>
+	<li>Add reporting & Brief image </li>
+	<li>Customise formatting </li>
+	<li>- to inoffensive standard only, not reviewers primary interest </li>
+	<li>Review UI </li>
+	<li>- to inoffensive standard only, not reviewers primary interest </li>
+	<li>Cull redundant template code&pages </li>
+	<li>Comment code review </li>
+</ul>
